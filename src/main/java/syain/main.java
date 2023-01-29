@@ -5,50 +5,44 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) throws Throwable {
-
+		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Select one of the options:");
-		System.out.println("1. Shop Settings  ");
-		System.out.println("2. Manage Shop Items");
-		System.out.println("3. Create New Invoice");
-		System.out.println("4. Report: Statistics");
-		System.out.println("5. Report: All Invoices");
-		System.out.println("6. Search (1) Invoice");
-		System.out.println("7. Program Statistics");
-//		System.out.println("8. Exit  ");
+		
+		boolean menueExit=true;
+		do {
+			for (String x:Menue.getMenuArray()) {
+				System.out.println(x);
+				
+			}
+			
+//			int select = sc.nextInt();
+			
+			
+				int select=sc.nextInt();
+				switch (select) {
+					case 1:
+						for (String x:men.getMenuArray2()) 
+							System.out.println(x);
+							
+						
+						break;
+						
+					case 2:
+						for (String x:mun2.getMenuArray3()) 
+							System.out.println(x);
+						break;
+				
+			}
+		}	while (menueExit);
+	boolean	userExit = false;
+	
+					
+}			
+		
+}		
+		
+		
+	
 
-		int select = sc.nextInt();
 
-		switch (select) {
-		case 1:
 
-			break;
-		case 2:
-
-			break;
-		case 3:
-
-			break;
-		case 4:
-
-			break;
-
-		case 5:
-
-			break;
-		case 6:
-
-			break;
-		case 7:
-
-			break;
-		case 8:
-			System.out.println("Exit");
-
-			break;
-
-		}
-
-	}
-
-}

@@ -11,10 +11,9 @@ public class Invoices {
 	private Integer balanc;
 	private Integer Tel;
 	private Integer Fax;
-	private String  Email;
-	private String  Website;
-	
-	
+	private String Email;
+	private String Website;
+
 	public Integer getTel() {
 		return Tel;
 	}
