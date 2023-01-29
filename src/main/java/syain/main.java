@@ -15,7 +15,7 @@ public class Main {
 		System.out.println("5. Report: All Invoices");
 		System.out.println("6. Search (1) Invoice");
 		System.out.println("7. Program Statistics");
-		System.out.println("8. Exit  ");
+//		System.out.println("8. Exit  ");
 
 		int select = sc.nextInt();
 
