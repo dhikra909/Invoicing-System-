@@ -2,7 +2,7 @@ package syain;
 
 import java.util.Scanner;
 
-public class main {
+public class Main {
 
 	public static void main(String[] args) throws Throwable {
 
@@ -17,49 +17,38 @@ public class main {
 		System.out.println("7. Program Statistics");
 		System.out.println("8. Exit  ");
 
-		
 		int select = sc.nextInt();
-		
-		switch(select) {
+
+		switch (select) {
 		case 1:
-			
+
 			break;
 		case 2:
-		
+
 			break;
-		case 3:	
-		
+		case 3:
+
 			break;
-		case 4:	
-		
-			
+		case 4:
+
 			break;
-		
-        case 5:	
-		
-			
+
+		case 5:
+
 			break;
-        case 6:	
-		
-			
+		case 6:
+
 			break;
-        case 7:	
-		
-		
-		break;
-        case 8:	
-        	System.out.println("Exit");
-		
-		break;
-		
-		
+		case 7:
+
+			break;
+		case 8:
+			System.out.println("Exit");
+
+			break;
+
 		}
-		
-		
-		
-		
+
 	}
-	
-	
-	
+
 }
