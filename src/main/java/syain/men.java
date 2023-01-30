@@ -11,8 +11,7 @@ public class men {
 				"1- Load Data ",
 				"2- Set Shop Name ",
 				"3- Set Invoice Heade ",
-				"4- Set Invoice Heade ",
-				"5- Go Back ");
+				"4- Go Back ");
 				
 
 			return menueItemList ;	

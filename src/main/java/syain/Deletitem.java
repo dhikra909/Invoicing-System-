@@ -23,7 +23,7 @@ public class Deletitem {
 	                  
 	            // Deleting from database
 	            String q1 = "DELETE from item " +
-	            		 "WHERE id = 4 ";
+	            		 "WHERE item_ID = 1 ";
 	                     System.out.println(q1);
 	            int x = st.executeUpdate(q1);
 	             

@@ -25,13 +25,7 @@ public class Insertshop {
 			System.out.println("enter Shop_Name: ");
 			String Shop_Name = scanner.next();
 			System.out.println("enter  unit_price : ");
-			Integer unit_price = scanner.nextInt();
-			System.out.println("enter quantity : ");
-			Integer quantity = scanner.nextInt();
-			System.out.println("enter qty_amount : ");
-			Integer qty_amount = scanner.nextInt();
-			System.out.println("enter price : ");
-			Integer price = scanner.nextInt();
+		
 		
 			// Inserting data using SQL query
 			String sql = "insert into Shop_Name values(" + Shop_ID + ",'" + Shop_Name + "')";

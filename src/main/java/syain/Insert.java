@@ -78,8 +78,7 @@ public class Insert {
 
 			// Entering the data
 			Scanner scanner = new Scanner(System.in);
-			System.out.println("enter item_ID : ");
-			Integer item_ID = scanner.nextInt();
+			
 			System.out.println("enter item_name: ");
 			String item_name = scanner.next();
 			System.out.println("enter  unit_price : ");
@@ -92,8 +91,8 @@ public class Insert {
 			Integer price = scanner.nextInt();
 		
 			// Inserting data using SQL query
-			String sql = "insert into item values(" + item_ID + ",'" + item_name + "'," + unit_price + "," + quantity
-					+ "," + qty_amount + "," + qty_amount + "," + price + ")";
+			String sql = "insert into item(item_name,unit_price,quantity,qty_amount,price) values('" + item_name + "'," + unit_price + "," + quantity
+					+ "," + qty_amount + "," + price + ")";
 			Statement st = con.createStatement();
 			//
 			// Executing query
