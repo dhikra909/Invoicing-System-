@@ -2,10 +2,13 @@ package syain;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 public class Menue {
-
+	
+	
 	public static List<String>getMenuArray(){
+		
 		List<String>menueItemList=Arrays.asList("*************",
 				
 				"1-Shop Settings ",
@@ -17,8 +20,7 @@ public class Menue {
 				"7- Program Statistics ",
 				"8- Exit  ");
 			return menueItemList ;	
-				
-				
-	}		
+				}
+	
 	
 }

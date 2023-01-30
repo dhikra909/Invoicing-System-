@@ -8,7 +8,7 @@ public class mun2 {
 	public static List<String>getMenuArray3(){
 		List<String>menueItemList=Arrays.asList("*************",
 				
-				"Add Items ",
+				"1- Add Items ",
 				"2- Delete Items ",
 				"3- Change Item Price",
 				"4- Report All Items",
