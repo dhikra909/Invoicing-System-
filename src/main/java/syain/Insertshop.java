@@ -25,8 +25,7 @@ public class Insertshop {
 			System.out.println("enter Shop_Name: ");
 			String Shop_Name = scanner.next();
 			System.out.println("enter  unit_price : ");
-		
-		
+
 			// Inserting data using SQL query
 			String sql = "insert into Shop_Name values(" + Shop_ID + ",'" + Shop_Name + "')";
 			Statement st = con.createStatement();
@@ -44,9 +43,5 @@ public class Insertshop {
 		}
 
 	}
-	
-	
-	
-	
-	
+
 }

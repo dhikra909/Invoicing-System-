@@ -7,9 +7,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.Scanner;
 
-public class reportinvis {
+public class Reportinvis {
 
-	
 	public static void reportinvis() {
 		String url = "jdbc:mysql://localhost:3306/my_Dataapi";
 		// Username and password to access DB
@@ -46,26 +45,5 @@ public class reportinvis {
 			System.err.println(ex);
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }

@@ -34,7 +34,6 @@ public class Reportst {
 				System.out.println("No_Of_Items =" + resultSet.getInt("No_Of_Items"));
 				System.out.println("No_of_Invoices =" + resultSet.getInt("No_of_Invoices"));
 				System.out.println("Total_Sales =" + resultSet.getInt("Total_Sales"));
-				
 
 			}
 		}
@@ -44,19 +43,5 @@ public class Reportst {
 			System.err.println(ex);
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }

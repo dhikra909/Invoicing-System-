@@ -9,7 +9,7 @@ import java.sql.Statement;
 import java.util.Date;
 import java.util.Scanner;
 
-public class reportit {
+public class Reportit {
 	public static void reportitm() {
 		String url = "jdbc:mysql://localhost:3306/my_Dataapi";
 		// Username and password to access DB
