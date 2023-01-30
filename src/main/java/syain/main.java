@@ -64,10 +64,10 @@ public class Main {
 									Deletitem.main();
 									break;
 								case 3:
-									Updeteitem.updeteitrm();
+									Updeteitem.updatitemp();
 									break;
 								case 4:
-									
+									reportit.reportitm();
 									break;
 								case 5:
 									exitMenu2=false;
@@ -76,10 +76,10 @@ public class Main {
 				}}
 						break;
 					case 3:
-					
+						Insert.maininsrt();
 						break;
 					case 4:
-						
+						Reportst.reportst();
 						break;
 					case 5:
 						

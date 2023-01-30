@@ -45,9 +45,9 @@ public class Insert {
 			System.out.println("enter Website: ");
 			String Website = scanner.next();
 			// Inserting data using SQL query
-			String sql = "insert into invoices values(" + id + ",'" + name + "'," + phone_no + "," + invoice_date
-					+ "," + number_of_items + "," + total_amount + "," + total_amount + "," + paid_amount + ","
-					+ balanc + "," + Telinvoices + "," + Integer + ",'" + Email + "','" + Website + "')";
+			String sql = "insert into invoices values(" + id + ",'" + name + "'," + phone_no + "," + invoice_date + ","
+					+ number_of_items + "," + total_amount + "," + total_amount + "," + paid_amount + "," + balanc + ","
+					+ Telinvoices + "," + Integer + ",'" + Email + "','" + Website + "')";
 			Statement st = con.createStatement();
 			//
 			// Executing query
@@ -64,8 +64,6 @@ public class Insert {
 
 	}
 
-	
-	
 	public static void maininsrt_item() throws ClassNotFoundException, SQLException {
 
 		Class.forName("com.mysql.cj.jdbc.Driver");
@@ -78,7 +76,7 @@ public class Insert {
 
 			// Entering the data
 			Scanner scanner = new Scanner(System.in);
-			
+
 			System.out.println("enter item_name: ");
 			String item_name = scanner.next();
 			System.out.println("enter  unit_price : ");
@@ -89,10 +87,10 @@ public class Insert {
 			Integer qty_amount = scanner.nextInt();
 			System.out.println("enter price : ");
 			Integer price = scanner.nextInt();
-		
+
 			// Inserting data using SQL query
-			String sql = "insert into item(item_name,unit_price,quantity,qty_amount,price) values('" + item_name + "'," + unit_price + "," + quantity
-					+ "," + qty_amount + "," + price + ")";
+			String sql = "insert into item(item_name,unit_price,quantity,qty_amount,price) values('" + item_name + "',"
+					+ unit_price + "," + quantity + "," + qty_amount + "," + price + ")";
 			Statement st = con.createStatement();
 			//
 			// Executing query
@@ -108,11 +106,5 @@ public class Insert {
 		}
 
 	}
-	
-	
-	
-	
-	
-	
-	
+
 }
