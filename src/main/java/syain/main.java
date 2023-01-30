@@ -82,7 +82,7 @@ public class Main {
 						Reportst.reportst();
 						break;
 					case 5:
-						
+						reportinvis.reportinvis();
 						break;
 					case 6:
 						
