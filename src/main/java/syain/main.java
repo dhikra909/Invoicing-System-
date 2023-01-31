@@ -86,11 +86,31 @@ public class Main {
 
 				break;
 			case 8:
-				boolean userExit = false;
-				break;
+				boolean userExit = true;
+				do {
+				System.out.println("Are you sure you want to exit?");
+				System.out.println("1. YES");
+				System.out.println("2. NO");
+				int excho =sc.nextInt();
+				if ( excho==1){
+					userExit = false;
+					menueExit = false;
+				}else if (excho == 2) {
+					userExit = false;
+					menueExit = true;
+					
+				}
 
+				}while(userExit);
+			
+		
+				
+				
+				
+				break;
+	}
 			}
-		} while (menueExit);
+		 while (menueExit);
 
 	}
 

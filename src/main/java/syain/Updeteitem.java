@@ -20,10 +20,10 @@ public class Updeteitem {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter item_ID: ");
 		Integer idInput = scanner.nextInt();
-		
+
 		System.out.println("Enter New Price : ");
 		Integer newPrice = scanner.nextInt();
-		
+
 		String sql2 = "UPDATE item SET price= " + newPrice + " where item_ID=" + idInput;
 
 		Connection con1 = null;

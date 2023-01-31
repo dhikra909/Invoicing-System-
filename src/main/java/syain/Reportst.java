@@ -17,7 +17,9 @@ public class Reportst {
 		String pass = "root";
 		Scanner scanner = new Scanner(System.in);
 
-		String sql2 = "SELECT * FROM  statistics";
+		String sql2 = "SELECT (SELECT count(*) from invoices ) As No_of_Invoices,"
+				+ "(SELECT count(*) from item) As No_Of_Items ,"
+				+ "(SELECT SUM(unit_price) from item) AS Total_Sales ; ";
 		Connection con1 = null;
 		try {
 			Driver driver = (Driver) Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
@@ -30,9 +32,8 @@ public class Reportst {
 			ResultSet resultSet = stmt.executeQuery();
 
 			while (resultSet.next()) {
-				System.out.println("ID =" + resultSet.getInt("ID"));
-				System.out.println("No_Of_Items =" + resultSet.getInt("No_Of_Items"));
 				System.out.println("No_of_Invoices =" + resultSet.getInt("No_of_Invoices"));
+				System.out.println("No_Of_Items =" + resultSet.getInt("No_Of_Items"));
 				System.out.println("Total_Sales =" + resultSet.getInt("Total_Sales"));
 
 			}
