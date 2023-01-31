@@ -7,7 +7,13 @@ public class Main {
 	public static void main(String[] args) throws Throwable {
 
 		Scanner sc = new Scanner(System.in);
-
+		System.out.println("Enter url");
+		String  url = sc.next();
+		System.out.println("Enter user");
+		String  user = sc.next();
+		System.out.println("Enter pass");
+		String  pass = sc.next();
+		
 		boolean menueExit = true;
 		do {
 			for (String x : Menue.getMenuArray()) {
@@ -21,6 +27,7 @@ public class Main {
 
 			switch (select) {
 			case 1:
+				
 				boolean exitMenu = true;
 				while (exitMenu) {
 					for (String x : Men.getMenuArray2())
@@ -28,14 +35,14 @@ public class Main {
 					int choose = sc.nextInt();
 					switch (choose) {
 					case 1:
-						Insert.maininsrt();
-						Insert.maininsrt_item();
+						Insert.maininsrt(url, user, pass);
+						Insert.maininsrt_item(url, user, pass);
 						break;
 					case 2:
-						Insertshop.maininsrt_shop();
+						Insertshop.maininsrt_shop(url, user, pass);
 						break;
 					case 3:
-						Insert.maininsrt();
+						Insert.maininsrt(url, user, pass);
 						break;
 					case 4:
 						exitMenu = false;
@@ -51,16 +58,16 @@ public class Main {
 					int choose = sc.nextInt();
 					switch (choose) {
 					case 1:
-						Insert.maininsrt_item();
+						Insert.maininsrt_item(url, user, pass);
 						break;
 					case 2:
-						Deletitem.main();
+						Deletitem.main(url, user, pass);
 						break;
 					case 3:
-						Updeteitem.updatitemp();
+						Updeteitem.updatitemp(url, user, pass);
 						break;
 					case 4:
-						Reportit.reportitm();
+						Reportit.reportitm(url, user, pass);
 						break;
 					case 5:
 						exitMenu2 = false;
@@ -70,16 +77,17 @@ public class Main {
 				}
 				break;
 			case 3:
-				Insert.maininsrt();
+				Insert.maininsrt(url, user, pass);
 				break;
 			case 4:
-				Reportst.reportst();
+				Reportst.reportst(url, user, pass);
 				break;
 			case 5:
-				Reportinvis.reportinvis();
+				Reportinvis.reportinvis(url, user, pass);
 				break;
 			case 6:
-				Search.Searchinv();
+			
+				Search.Searchinv(url, user, pass);
 				break;
 			case 7:
 

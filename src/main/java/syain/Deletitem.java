@@ -6,10 +6,10 @@ import java.sql.DriverManager;
 
 public class Deletitem {
 
-	public static void main() {
-		String url = "jdbc:mysql://localhost:3306/my_Dataapi";
-		String user = "root";
-		String pass = "root";
+	public static void main(String url,String user,String pass) {
+//		String url = "jdbc:mysql://localhost:3306/my_Dataapi";
+//		String user = "root";
+//		String pass = "root";
 		Integer item_ID = 5;
 		String item_name = "omd";
 		Integer unit_price = 112519;

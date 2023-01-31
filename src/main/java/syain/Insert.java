@@ -8,13 +8,13 @@ import java.util.Scanner;
 
 public class Insert {
 
-	public static void maininsrt() throws ClassNotFoundException, SQLException {
+	public static void maininsrt(String url,String user,String pass) throws ClassNotFoundException, SQLException {
 
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		String url = "jdbc:mysql://localhost:3306/my_Dataapi";
-		String username = "root";
-		String password = "root";
-		Connection con = DriverManager.getConnection(url, username, password);
+//		String url = "jdbc:mysql://localhost:3306/my_Dataapi";
+//		String username = "root";
+//		String password = "root";
+		Connection con = DriverManager.getConnection(url, user, pass);
 		if (con != null) {
 			System.out.println("Database Connected successfully");
 
@@ -67,13 +67,13 @@ public class Insert {
 
 	}
 
-	public static void maininsrt_item() throws ClassNotFoundException, SQLException {
+	public static void maininsrt_item(String url,String user,String pass) throws ClassNotFoundException, SQLException {
 
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		String url = "jdbc:mysql://localhost:3306/my_Dataapi";
-		String username = "root";
-		String password = "root";
-		Connection con = DriverManager.getConnection(url, username, password);
+//		String url = "jdbc:mysql://localhost:3306/my_Dataapi";
+//		String username = "root";
+//		String password = "root";
+		Connection con = DriverManager.getConnection(url, user, pass);
 		if (con != null) {
 			System.out.println("Database Connected successfully");
 

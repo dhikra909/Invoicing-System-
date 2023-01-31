@@ -9,17 +9,16 @@ import java.util.Scanner;
 
 public class Search {
 
-	public static void Searchinv() {
-		String url = "jdbc:mysql://localhost:3306/my_Dataapi";
-		// Username and password to access DB
-		// Custom initialization
-		String user = "root";
-		String pass = "root";
+	public static void Searchinv(String url,String user,String pass) {
+//		String url = "jdbc:mysql://localhost:3306/my_Dataapi";
+//		// Username and password to access DB
+//		// Custom initialization
+//		String user = "root";
+//		String pass = "root";
 		Scanner scanner = new Scanner(System.in);
-		
+
 		System.out.println("invo_number : ");
 		Integer invo_number = scanner.nextInt();
-		
 
 		String sql2 = "SELECT * FROM invoices INNER JOIN item "
 				+ "ON item.item_ID = invoices.item_ID WHERE invoices.id = " + invo_number;
@@ -54,7 +53,6 @@ public class Search {
 				System.out.println("qty_amount =" + resultSet.getInt("qty_amount"));
 				System.out.println("price =" + resultSet.getInt("price"));
 				System.out.println("id =" + resultSet.getInt("id"));
-				
 
 			}
 		}
@@ -64,6 +62,5 @@ public class Search {
 			System.err.println(ex);
 		}
 	}
-	
-	
+
 }

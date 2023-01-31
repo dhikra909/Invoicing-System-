@@ -9,12 +9,12 @@ import java.util.Scanner;
 
 public class Reportst {
 
-	public static void reportst() {
-		String url = "jdbc:mysql://localhost:3306/my_Dataapi";
-		// Username and password to access DB
-		// Custom initialization
-		String user = "root";
-		String pass = "root";
+	public static void reportst(String url,String user,String pass) {
+//		String url = "jdbc:mysql://localhost:3306/my_Dataapi";
+//		// Username and password to access DB
+//		// Custom initialization
+//		String user = "root";
+//		String pass = "root";
 		Scanner scanner = new Scanner(System.in);
 
 		String sql2 = "SELECT (SELECT count(*) from invoices ) As No_of_Invoices,"

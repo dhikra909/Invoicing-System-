@@ -10,13 +10,13 @@ import java.util.Scanner;
 
 public class Updeteitem {
 
-	public static void updatitemp() {
+	public static void updatitemp(String url,String user,String pass) {
 
-		String url = "jdbc:mysql://localhost:3306/my_Dataapi";
-		// Username and password to access DB
-		// Custom initialization
-		String user = "root";
-		String pass = "root";
+//		String url = "jdbc:mysql://localhost:3306/my_Dataapi";
+//		// Username and password to access DB
+//		// Custom initialization
+//		String user = "root";
+//		String pass = "root";
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter item_ID: ");
 		Integer idInput = scanner.nextInt();
