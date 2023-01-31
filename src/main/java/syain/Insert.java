@@ -44,12 +44,13 @@ public class Insert {
 			String Email = scanner.next();
 			System.out.println("enter Website: ");
 			String Website = scanner.next();
-			
+			System.out.println("enter item_ID  : ");
+			Integer item_ID  = scanner.nextInt();
 			// Inserting data using SQL query
-			String sql = "insert into invoices (customer_full_name,phone_number,invoice_date,num_results,number_of_items,total_amount,paid_amount,balanc,Tel,Fax,Email,Website) values('"
+			String sql = "insert into invoices (customer_full_name,phone_number,invoice_date,num_results,number_of_items,total_amount,paid_amount,balanc,Tel,Fax,Email,Website,item_ID) values('"
 					+ customer_full_name + "'," + phone_number + "," + invoice_date + "," + num_results + "," + number_of_items + "," + total_amount + ","
-					+ paid_amount + "," + balanc + "," + Tel + "," + Fax  + ",'" + Email + "','" + Website
-					+ "')";
+					+ paid_amount + "," + balanc + "," + Tel + "," + Fax  + ",'" + Email + "','" + Website +"',"+ item_ID
+					+ ")";
 			Statement st = con.createStatement();
 			//
 			// Executing query
