@@ -20,14 +20,14 @@ public class Insert {
 
 			// Entering the data
 			Scanner scanner = new Scanner(System.in);
-			System.out.println("enter id : ");
-			Integer id = scanner.nextInt();
-			System.out.println("enter name: ");
-			String name = scanner.next();
-			System.out.println("enter  phone_no : ");
-			Integer phone_no = scanner.nextInt();
+			System.out.println("enter customer_full_name: ");
+			String customer_full_name = scanner.next();
+			System.out.println("enter  phone_number : ");
+			Integer phone_number = scanner.nextInt();
 			System.out.println("enter invoice_date : ");
 			Integer invoice_date = scanner.nextInt();
+			System.out.println("enter num_results : ");
+			Integer num_results = scanner.nextInt();
 			System.out.println("enter number_of_items : ");
 			Integer number_of_items = scanner.nextInt();
 			System.out.println("enter total_amount : ");
@@ -36,18 +36,20 @@ public class Insert {
 			Integer paid_amount = scanner.nextInt();
 			System.out.println("enter balanc : ");
 			Integer balanc = scanner.nextInt();
-			System.out.println("enter Telinvoices : ");
-			Integer Telinvoices = scanner.nextInt();
-			System.out.println("enter Integer : ");
-			Integer Integer = scanner.nextInt();
+			System.out.println("enter Tel  : ");
+			Integer Tel  = scanner.nextInt();
+			System.out.println("enter Fax: ");
+			Integer Fax = scanner.nextInt();
 			System.out.println("enter Email: ");
 			String Email = scanner.next();
 			System.out.println("enter Website: ");
 			String Website = scanner.next();
+			
 			// Inserting data using SQL query
-			String sql = "insert into invoices values(" + id + ",'" + name + "'," + phone_no + "," + invoice_date + ","
-					+ number_of_items + "," + total_amount + "," + total_amount + "," + paid_amount + "," + balanc + ","
-					+ Telinvoices + "," + Integer + ",'" + Email + "','" + Website + "')";
+			String sql = "insert into invoices (customer_full_name,phone_number,invoice_date,num_results,number_of_items,total_amount,paid_amount,balanc,Tel,Fax,Email,Website) values('"
+					+ customer_full_name + "'," + phone_number + "," + invoice_date + "," + num_results + "," + number_of_items + "," + total_amount + ","
+					+ paid_amount + "," + balanc + "," + Tel + "," + Fax  + ",'" + Email + "','" + Website
+					+ "')";
 			Statement st = con.createStatement();
 			//
 			// Executing query

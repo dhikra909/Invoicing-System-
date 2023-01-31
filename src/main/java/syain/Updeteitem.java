@@ -20,8 +20,11 @@ public class Updeteitem {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter item_ID: ");
 		Integer idInput = scanner.nextInt();
-
-		String sql2 = "UPDATE item SET price= 9 where item_ID<=" + idInput;
+		
+		System.out.println("Enter New Price : ");
+		Integer newPrice = scanner.nextInt();
+		
+		String sql2 = "UPDATE item SET price= " + newPrice + " where item_ID=" + idInput;
 
 		Connection con1 = null;
 		try {
@@ -32,6 +35,8 @@ public class Updeteitem {
 			con1 = DriverManager.getConnection(url, user, pass);
 			// Creating a statement
 			Statement st = con1.createStatement();
+			st.executeUpdate(sql2);
+			System.out.println("successfull");
 
 		}
 		// Catch block to handle exceptions

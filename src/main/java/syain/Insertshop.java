@@ -20,14 +20,13 @@ public class Insertshop {
 
 			// Entering the data
 			Scanner scanner = new Scanner(System.in);
-			System.out.println("enter Shop_ID : ");
-			Integer Shop_ID = scanner.nextInt();
 			System.out.println("enter Shop_Name: ");
 			String Shop_Name = scanner.next();
-			System.out.println("enter  unit_price : ");
+			System.out.println("enter id : ");
+			Integer id = scanner.nextInt();
 
 			// Inserting data using SQL query
-			String sql = "insert into Shop_Name values(" + Shop_ID + ",'" + Shop_Name + "')";
+			String sql = "insert into Shop_Name(Shop_Name,id) values('" + Shop_Name + "'," + id + ")";
 			Statement st = con.createStatement();
 			//
 			// Executing query
